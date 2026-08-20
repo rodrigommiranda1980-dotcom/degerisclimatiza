@@ -1,0 +1,25 @@
+# Ambiente local / Agentes
+.agents/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Variáveis de ambiente / segredos
+.env
+.env.*
+!.env.example
+
+# Dependências Node (proteção futura)
+node_modules/
+
+# Builds gerados (proteção futura)
+dist/
+build/
+
+# Asset local não utilizado
+assets/images/attention_ac.png
