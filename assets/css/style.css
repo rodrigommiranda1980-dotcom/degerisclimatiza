@@ -327,8 +327,10 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(15, 23, 42, 0.15); /* Opacidade ainda mais reduzida (escurecimento sutil) */
-  backdrop-filter: blur(1px); /* Blur quase imperceptível */
+  background-color: rgba(15, 23, 42, 0.15);
+  /* Opacidade ainda mais reduzida (escurecimento sutil) */
+  backdrop-filter: blur(1px);
+  /* Blur quase imperceptível */
   -webkit-backdrop-filter: blur(1px);
   z-index: 98;
   opacity: 0;
@@ -346,18 +348,22 @@ a {
    ========================================================================== */
 @media (min-width: 1024px) {
   .mobile-nav-drawer {
-    top: 112px; /* Distância confortável abaixo do Header Desktop para não sobrepor CTA/X */
+    top: 112px;
+    /* Distância confortável abaixo do Header Desktop para não sobrepor CTA/X */
     left: auto;
     /* Alinha a borda direita do painel com a borda direita exata do Header Desktop.
        1232px / 2 = 616px (metade do max-width do Header). */
     right: max(48px, calc(50vw - 616px));
     width: 340px;
-    padding: 32px; /* Respiro interno mais premium no Desktop */
-    z-index: 19; /* Fica abaixo do site-header (z-index 20) no Desktop */
+    padding: 32px;
+    /* Respiro interno mais premium no Desktop */
+    z-index: 19;
+    /* Fica abaixo do site-header (z-index 20) no Desktop */
   }
 
   .drawer-overlay {
-    z-index: 18; /* Fica abaixo do painel (19) e do Header (20) */
+    z-index: 18;
+    /* Fica abaixo do painel (19) e do Header (20) */
   }
 }
 
@@ -1264,16 +1270,17 @@ a {
   }
 
   .hero-fullbleed-card {
-    min-height: calc(100svh - 24px);
+    margin-top: 72px;
+    min-height: calc(100svh - 96px);
     border-radius: 20px;
-    background-position: 85% center;
+    background-position: 70% center;
   }
 
   .hero-fullbleed-card::before {
     background: linear-gradient(180deg,
-        rgba(15, 23, 42, 0.94) 0%,
-        rgba(15, 23, 42, 0.88) 60%,
-        rgba(15, 23, 42, 0.6) 100%);
+        rgba(15, 23, 42, 0.88) 0%,
+        rgba(15, 23, 42, 0.78) 60%,
+        rgba(15, 23, 42, 0.45) 100%);
   }
 
   .hero-inner-container {
@@ -1321,7 +1328,8 @@ a {
   }
 
   .hero-body {
-    padding: 16px 20px 32px 20px;
+    justify-content: flex-start;
+    padding: 64px 20px 32px 20px;
   }
 
   .hero-eyebrow {
