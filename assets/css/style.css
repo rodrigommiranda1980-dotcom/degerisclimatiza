@@ -1334,29 +1334,25 @@ a {
   }
 
   .btn-hamburger {
-    width: 40px;
-    height: 40px;
-    margin-right: 4px;
-  }
-
-  .site-header.is-scrolled .btn-hamburger {
+    width: 48px;
+    height: 48px;
+    margin-right: -12px;
     background: transparent;
     border-color: transparent;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    width: 48px;
-    height: 48px;
-    margin-right: -12px;
+    box-shadow: none;
   }
 
-  .site-header.is-scrolled .btn-hamburger svg {
+  .btn-hamburger svg {
     width: 24px;
     height: 24px;
   }
 
+
   .hero-body {
     justify-content: center;
-    padding: 96px 20px 96px 20px;
+    padding: 96px 0 96px 0;
   }
 
   .hero-eyebrow {
