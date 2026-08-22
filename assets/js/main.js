@@ -5,6 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const drawerOverlay = document.getElementById('drawerOverlay');
 
   // ==========================================================================
+  // DYNAMIC HEADER SCROLL
+  // ==========================================================================
+  const siteHeader = document.getElementById('header');
+  if (siteHeader) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        siteHeader.classList.add('is-scrolled');
+      } else {
+        siteHeader.classList.remove('is-scrolled');
+      }
+    }, { passive: true });
+  }
+
+  // ==========================================================================
   // SCROLL LOCK (DESKTOP) - Preserva a Scrollbar Nativa
   // ==========================================================================
   let lockedScrollX = 0;
